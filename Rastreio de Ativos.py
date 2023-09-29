@@ -3,20 +3,16 @@ import smtplib
 import schedule
 import time
 
-# Configurações de e-mail
+# cadastro de e-mail para notificações
 SEU_EMAIL = 'seu_email@gmail.com'
 SUA_SENHA = 'sua_senha'
 EMAIL_DESTINO = 'destinatario_email@gmail.com'
 ASSUNTO = 'Rastreamento de Ativo'
 MENSAGEM_TEMPLATE = """\
-Olá,
-
-Aqui está a última atualização do ativo {ticker}:
-
+Olá,segue arquivo
 Nome: {nome}
 Preço atual ({moeda}): {preco_atual}
 Data da última atualização: {data_atualizacao}
-
 Atenciosamente,
 Seu Bot de Rastreamento de Ativos
 """
